@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Object prototype chaining</h1>
+    <p id="demo"></p>
+    <script>
+        function Student(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        let student1 = new Student('John', 32)
+        let student2 = new Student('Mary', 32)
+        console.log(student1);
+        console.log(student2);
+        student1.sports = 'Cricket';
+        Student.prototype.gender = null
+        let student3 = new Student('Mike', 26)
+        console.log(student3);
+    </script>
+</body>
+
+</html>

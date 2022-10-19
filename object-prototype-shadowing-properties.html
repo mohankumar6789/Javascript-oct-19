@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Object prototype shadowing properties</h1>
+    <p id="demo"></p>
+    <script>
+            let x = { a: 10, m: 5, };
+            let y = Object.create(x);
+            y.a = 40;
+            let z = Object.create(y);
+            console.log(z)
+    </script>
+</body>
+
+</html>

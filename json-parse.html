@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+<body>
+    <h1>JSON Parse</h1>
+    <script>
+        const json = '{"employeeid": 3499, "age":37}';
+        const obj = JSON.parse(json);
+        document.writeln(obj.employeeid);
+        document.writeln(obj.age);
+    </script>
+</body>
+</html>

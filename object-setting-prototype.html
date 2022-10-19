@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Object setting prototype</h1>
+    <p id="demo"></p>
+    <script>
+        const languageProtoype = {
+            scripting() {
+                document.write("Welcome to Javascript Objects Prototypes!");
+            },
+        };
+        const output = Object.create(languageProtoype);
+        output.scripting(); // hello!
+    </script>
+</body>
+
+</html>
